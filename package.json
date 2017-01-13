@@ -1,35 +1,88 @@
 {
-  "name": "hapi-rest-demo",
-  "version": "1.0.0",
-  "description": "A SpiderTutorial Demo project",
-  "main": "index.js",
-  "scripts": {
-    "test": "istanbul cover _mocha test/**/*.js"
-  },
+  "name": "nodeunit",
+  "version": "0.10.2",
+  "description": "Easy unit testing for node.js and the browser.",
+  "maintainers": [
+    {
+      "name": "Caolan McMahon",
+      "web": "https://github.com/caolan"
+    }
+  ],
+  "contributors": [
+    {
+      "name": "Romain Beauxis",
+      "web": "https://github.com/toots"
+    },
+    {
+      "name": "Alex Gorbatchev",
+      "web": "https://github.com/alexgorbatchev"
+    },
+    {
+      "name": "Alex Wolfe",
+      "web": "https://github.com/alexkwolfe"
+    },
+    {
+      "name": "Carl Fürstenberg",
+      "web": "https://github.com/azatoth"
+    },
+    {
+      "name": "Gerad Suyderhoud",
+      "web": "https://github.com/gerad"
+    },
+    {
+      "name": "Kadir Pekel",
+      "web": "https://github.com/coffeemate"
+    },
+    {
+      "name": "Oleg Efimov",
+      "web": "https://github.com/Sannis"
+    },
+    {
+      "name": "Orlando Vazquez",
+      "web": "https://github.com/orlandov"
+    },
+    {
+      "name": "Ryan Dahl",
+      "web": "https://github.com/ry"
+    },
+    {
+      "name": "Sam Stephenson",
+      "web": "https://github.com/sstephenson"
+    },
+    {
+      "name": "Thomas Mayfield",
+      "web": "https://github.com/thegreatape"
+    },
+    {
+      "name": "Elijah Insua <tmpvar@gmail.com>",
+      "web": "http://tmpvar.com"
+    }
+  ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/davidroman1914/hapi-rest-demo.git"
-  },
-  "keywords": [
-    "nodejs",
-    "hapijs"
-  ],
-  "author": "SpiderTutorial",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/davidroman1914/hapi-rest-demo/issues"
-  },
-  "homepage": "https://github.com/davidroman1914/hapi-rest-demo#readme",
-  "dependencies": {
-    "hapi": "^13.3.0",
-    "pg": "^4.5.5",
-    "underscore": "~1.6.0",
-    "q": "~1.0.1"
+    "url": "http://github.com/caolan/nodeunit.git"
   },
   "devDependencies": {
-    "mocha": "^1.17.1",
-    "should": "^3.1.3",
-    "supertest": "^0.9.0",
-    "travis-cov": "^0.2.5"
+    "uglify-js": ">=2.7.3",
+    "should": ">=11.1.0"
+  },
+  "bugs": {
+    "url": "http://github.com/caolan/nodeunit/issues"
+  },
+  "license": "MIT",
+  "directories": {
+    "lib": "./lib",
+    "doc": "./doc",
+    "man": "./man1"
+  },
+  "bin": {
+    "nodeunit": "./bin/nodeunit"
+  },
+  "dependencies": {
+    "ejs": "^2.5.2",
+    "tap": "^7.0.0"
+  },
+  "scripts": {
+    "test": "node ./bin/nodeunit"
   }
 }
